@@ -57,9 +57,9 @@ A financial institution wants to automate the loan application processing pipeli
 
 ```mermaid
 graph TD
-    A[Loan Application Submitted] -->|Message| B[Azure Service Bus Queue]
-    B -->|Trigger| C[Azure Function]
-    C -->|API Call| D[XenHey API Connector]
+    A[Loan Application Submitted] -->|Message| B[Azure Function Http Service]
+    B -->|Trigger| C[Azure Function Servce Bus Trigger]
+    C -->|Service Bus Trigger | D[XenHey API Connector]
     D -->|Stored Procedure Call| E[Azure SQL Database]
     E -->|Validate & Process| D
     D -->|Response| C
