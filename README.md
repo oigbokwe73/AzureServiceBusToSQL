@@ -2,7 +2,7 @@
 ### **Use Case: Automated Loan Processing in Financial Services**
 
 **Overview:**
-A financial institution wants to automate the loan application processing pipeline by integrating multiple systems. The goal is to receive loan application requests, process them using Azure Functions, and store the results in an Azure SQL database. XenHey's API connector is used to expose Azure SQL stored procedures and views for real-time data retrieval and updates, while Azure Service Bus ensures reliable messaging between systems.
+A financial institution wants to automate the loan application processing pipeline by integrating multiple systems. The goal is to receive loan application requests, process them using Azure Functions,  Azure Service Bus to move and store the results in an Azure SQL database. XenHey's API connector is used to expose Azure SQL stored procedures and views for real-time data retrieval and updates, while Azure Service Bus ensures reliable messaging between systems.
 
 ---
 
